@@ -1,5 +1,5 @@
 <?php
-// created: 2018-05-21 09:51:54
+// created: 2018-05-21 12:53:55
 $dashletsFiles = array (
   'MyCallsDashlet' => 
   array (
@@ -234,13 +234,6 @@ $dashletsFiles = array (
     'class' => 'MyProjectTaskDashlet',
     'meta' => 'modules/ProjectTask/Dashlets/MyProjectTaskDashlet/MyProjectTaskDashlet.meta.php',
     'module' => 'ProjectTask',
-  ),
-  'qwe12_BitCoinDashlet' => 
-  array (
-    'file' => 'modules/qwe12_BitCoin/Dashlets/qwe12_BitCoinDashlet/qwe12_BitCoinDashlet.php',
-    'class' => 'qwe12_BitCoinDashlet',
-    'meta' => 'modules/qwe12_BitCoin/Dashlets/qwe12_BitCoinDashlet/qwe12_BitCoinDashlet.meta.php',
-    'module' => 'qwe12_BitCoin',
   ),
   'MyProjectDashlet' => 
   array (

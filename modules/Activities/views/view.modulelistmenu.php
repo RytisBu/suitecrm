@@ -52,7 +52,7 @@ class ActivitiesViewModulelistmenu extends ViewModulelistmenu
 
         }
         $this->ss->assign('LAST_VIEWED',$history);
-
+ 	    
  		$this->ss->display('include/MVC/View/tpls/modulelistmenu.tpl');
  	}
 }

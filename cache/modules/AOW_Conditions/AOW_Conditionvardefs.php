@@ -349,5 +349,4 @@
   array (
     'basic' => 'basic',
   ),
-  'custom_fields' => false,
 );

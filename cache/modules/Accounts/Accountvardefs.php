@@ -209,6 +209,16 @@
       'id_name' => 'assigned_user_id',
       'table' => 'users',
     ),
+    'SecurityGroups' => 
+    array (
+      'name' => 'SecurityGroups',
+      'type' => 'link',
+      'relationship' => 'securitygroups_accounts',
+      'module' => 'SecurityGroups',
+      'bean_name' => 'SecurityGroup',
+      'source' => 'non-db',
+      'vname' => 'LBL_SECURITYGROUPS',
+    ),
     'account_type' => 
     array (
       'name' => 'account_type',
@@ -1034,6 +1044,21 @@
       'rhs_key' => 'assigned_user_id',
       'relationship_type' => 'one-to-many',
     ),
+    'securitygroups_accounts' => 
+    array (
+      'lhs_module' => 'SecurityGroups',
+      'lhs_table' => 'securitygroups',
+      'lhs_key' => 'id',
+      'rhs_module' => 'Accounts',
+      'rhs_table' => 'accounts',
+      'rhs_key' => 'id',
+      'relationship_type' => 'many-to-many',
+      'join_table' => 'securitygroups_records',
+      'join_key_lhs' => 'securitygroup_id',
+      'join_key_rhs' => 'record_id',
+      'relationship_role_column' => 'module',
+      'relationship_role_column_value' => 'Accounts',
+    ),
     'accounts_email_addresses' => 
     array (
       'lhs_module' => 'Accounts',
@@ -1201,6 +1226,7 @@
   'templates' => 
   array (
     'company' => 'company',
+    'security_groups' => 'security_groups',
     'assignable' => 'assignable',
     'basic' => 'basic',
   ),

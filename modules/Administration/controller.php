@@ -93,26 +93,26 @@ class AdministrationController extends SugarController
      */
     public function action_saveglobalsearchsettings()
     {
-        global $current_user, $app_strings;
+		 global $current_user, $app_strings;
 
-        if (!is_admin($current_user))
-        {
-            sugar_die($GLOBALS['app_strings']['ERR_NOT_ADMIN']);
-        }
+		 if (!is_admin($current_user))
+		 {
+		     sugar_die($GLOBALS['app_strings']['ERR_NOT_ADMIN']);
+		 }
 
-        try
-        {
-            require_once('modules/Home/UnifiedSearchAdvanced.php');
-            $unifiedSearchAdvanced = new UnifiedSearchAdvanced();
-            $unifiedSearchAdvanced->saveGlobalSearchSettings();
+    	 try
+         {
+	    	 require_once('modules/Home/UnifiedSearchAdvanced.php');
+	    	 $unifiedSearchAdvanced = new UnifiedSearchAdvanced();
+	    	 $unifiedSearchAdvanced->saveGlobalSearchSettings();
 
-            $return = 'true';
+             $return = 'true';
             echo $return;
-        }
-        catch (Exception $ex)
-        {
-            echo "false";
-        }
+    	 }
+         catch (Exception $ex)
+         {
+    	 	 echo "false";
+    	 }
     }
 
     /**

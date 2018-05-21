@@ -1,5 +1,5 @@
 <?php
- // created: 2018-05-18 13:32:41
+ // created: 2018-05-21 12:46:08
 $dictionary['Lead']['fields']['jjwg_maps_lng_c']['inline_edit']=1;
 
  ?>

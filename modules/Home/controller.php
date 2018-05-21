@@ -57,18 +57,6 @@ class HomeController extends SugarController{
 
     }
 
-    public function action_stopSpectateing(){
-        define("Adm", "1");
-        global $current_user;
-        $user = new User();
-        $user->retrieve(ADM);
-        if(!$current_user->isAdmin()){
-            $_SESSION['user_id'] = $user->id;
-            $_SESSION['authenticated_user_id'] = $user->id;
-            SugarApplication::redirect("index.php?module=Administration&action=index");
-        }
-    }
-
     public function action_saveHTMLField(){
 
         if($_REQUEST['field'] && $_REQUEST['id'] && $_REQUEST['current_module']){

@@ -126,7 +126,7 @@ class="yui-navset"
 <tr>
 
 	{{math assign="rowCount" equation="$rowCount + 1"}}
-
+	
 	{{assign var='columnsInRow' value=$rowData|@count}}
 	{{assign var='columnsUsed' value=0}}
 

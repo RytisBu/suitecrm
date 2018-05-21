@@ -368,13 +368,11 @@ class SugarView
         global $theme;
         global $max_tabs;
         global $app_strings;
-        global $current_user_vision;
+        global $current_user;
         global $sugar_config;
         global $app_list_strings;
         global $mod_strings;
         global $current_language;
-        global $current_user;
-        global $db;
 
         $GLOBALS['app']->headerDisplayed = true;
 
@@ -788,16 +786,7 @@ class SugarView
 
         $imageURL = SugarThemeRegistry::current()->getImageURL("dashboard.png");
         $homeImage = "<img src='$imageURL'>";
-
-        $res = $db->query('SELECT * FROM users');
-        $test_users = array();
-        while ($row = $db->fetchByAssoc($res)) {
-            $test_users[] = array('id' => $row['id'], 'user_name' => $row['user_name']);
-        }
-
         $ss->assign("homeImage", $homeImage);
-        $ss->assign("current_user", $current_user);
-        $ss->assign("test_users", $test_users);
         global $mod_strings;
         $mod_strings = $bakModStrings;
         $headerTpl = $themeObject->getTemplate('header.tpl');
