@@ -1,5 +1,5 @@
 <?php
-// created: 2018-05-18 13:32:52
+// created: 2018-05-21 09:50:16
 $mod_strings = array (
   'LBL_ID' => 'ID',
   'LBL_DATE_ENTERED' => 'Date Created:',
@@ -23,8 +23,6 @@ $mod_strings = array (
   'LBL_OPT_IN_CONFIRMED' => 'Opted in',
   'LBL_ASSIGNED_TO_ID' => 'Assigned User:',
   'LBL_ASSIGNED_TO_NAME' => 'Assigned to:',
-  'LBL_SECURITYGROUPS' => 'Security Groups',
-  'LBL_SECURITYGROUPS_SUBPANEL_TITLE' => 'Security Groups',
   'ERR_DELETE_RECORD' => 'You must specify a record number in order to delete the account.',
   'LBL_ACCOUNT_NAME' => 'Account Name:',
   'LBL_ACCOUNT' => 'Account:',

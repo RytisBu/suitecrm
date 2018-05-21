@@ -386,10 +386,22 @@ $dictionary['Account'] = array(
         ),
     ),
     'indices' => array(
-        array('name' => 'idx_accnt_id_del', 'type' => 'index', 'fields' => array('id', 'deleted')),
-        array('name' => 'idx_accnt_name_del', 'type' => 'index', 'fields' => array('name', 'deleted')),
-        array('name' => 'idx_accnt_assigned_del', 'type' => 'index', 'fields' => array('deleted', 'assigned_user_id')),
-        array('name' => 'idx_accnt_parent_id', 'type' => 'index', 'fields' => array('parent_id')),
+        array(
+            'name' => 'idx_accnt_id_del',
+            'type' => 'index',
+            'fields' => array('id', 'deleted')),
+        array(
+            'name' => 'idx_accnt_name_del',
+            'type' => 'index',
+            'fields' => array('name', 'deleted')),
+        array(
+            'name' => 'idx_accnt_assigned_del',
+            'type' => 'index',
+            'fields' => array('deleted', 'assigned_user_id')),
+        array(
+            'name' => 'idx_accnt_parent_id',
+            'type' => 'index',
+            'fields' => array('parent_id')),
     )
 
 ,
@@ -560,7 +572,6 @@ VardefManager::createVardef(
     array(
         'default',
         'assignable',
-        'security_groups',
         'company',
     )
 );

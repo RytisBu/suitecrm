@@ -1,5 +1,5 @@
 <?php
-// created: 2018-05-18 13:32:52
+// created: 2018-05-21 09:50:33
 $mod_strings = array (
   'LBL_MODULE_NAME' => 'Home',
   'LBL_NEW_FORM_TITLE' => 'New Contact',

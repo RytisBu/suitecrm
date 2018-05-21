@@ -1,0 +1,46 @@
+Sun May 20 12:47:32 2018 [93668][1][FATAL] SugarBean::populateDefaultValues $field_defs should be an array
+Sun May 20 12:48:06 2018 [35417][1][FATAL] SugarBean::populateDefaultValues $field_defs should be an array
+Sun May 20 12:59:16 2018 [93006][1][FATAL] SugarBean::populateDefaultValues $field_defs should be an array
+Sun May 20 14:33:34 2018 [93006][1][FATAL] SugarBean::populateDefaultValues $field_defs should be an array
+Sun May 20 14:35:53 2018 [93668][1][FATAL] SugarBean::populateDefaultValues $field_defs should be an array
+Sun May 20 14:36:20 2018 [35417][1][FATAL] SugarBean::populateDefaultValues $field_defs should be an array
+Sun May 20 14:36:48 2018 [36782][1][FATAL] SugarBean::populateDefaultValues $field_defs should be an array
+Sun May 20 14:37:22 2018 [35659][1][FATAL] SugarBean::populateDefaultValues $field_defs should be an array
+Sun May 20 14:37:53 2018 [35464][1][FATAL] SugarBean::populateDefaultValues $field_defs should be an array
+Sun May 20 14:38:24 2018 [93668][1][FATAL] SugarBean::populateDefaultValues $field_defs should be an array
+Sun May 20 14:39:03 2018 [35659][1][FATAL] SugarBean::populateDefaultValues $field_defs should be an array
+Sun May 20 14:39:52 2018 [35465][1][FATAL] SugarBean::populateDefaultValues $field_defs should be an array
+Sun May 20 14:51:11 2018 [35417][1][FATAL] SugarBean::populateDefaultValues $field_defs should be an array
+Sun May 20 14:51:51 2018 [35690][1][FATAL] Bad subpanel definition, it has incorrect value for get_subpanel_data property securitygroups
+Mon May 21 00:11:20 2018 [35464][1][FATAL] Bad subpanel definition, it has incorrect value for get_subpanel_data property securitygroups
+Mon May 21 09:59:33 2018 [35464][1][FATAL] SugarBean::populateDefaultValues $field_defs should be an array
+Mon May 21 10:11:44 2018 [35672][1][FATAL] Exception handling in /Applications/XAMPP/xamppfiles/htdocs/SuiteCRM-Newest-version/include/MVC/Controller/SugarController.php:402
+Mon May 21 10:11:44 2018 [35672][1][FATAL] Exception in Controller: There is no action by that name: getData
+Mon May 21 10:11:44 2018 [35672][1][FATAL] backtrace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/SuiteCRM-Newest-version/include/MVC/Controller/SugarController.php(553): sugar_die('There is no act...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/SuiteCRM-Newest-version/include/MVC/Controller/SugarController.php(1088): SugarController->no_action()
+#2 /Applications/XAMPP/xamppfiles/htdocs/SuiteCRM-Newest-version/include/MVC/Controller/SugarController.php(465): SugarController->handleActionMaps()
+#3 /Applications/XAMPP/xamppfiles/htdocs/SuiteCRM-Newest-version/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#4 /Applications/XAMPP/xamppfiles/htdocs/SuiteCRM-Newest-version/include/MVC/SugarApplication.php(109): SugarController->execute()
+#5 /Applications/XAMPP/xamppfiles/htdocs/SuiteCRM-Newest-version/index.php(52): SugarApplication->execute()
+#6 {main}
+Mon May 21 10:12:03 2018 [93668][1][FATAL] Exception handling in /Applications/XAMPP/xamppfiles/htdocs/SuiteCRM-Newest-version/include/MVC/Controller/SugarController.php:402
+Mon May 21 10:12:03 2018 [93668][1][FATAL] Exception in Controller: There is no action by that name: getData
+Mon May 21 10:12:03 2018 [93668][1][FATAL] backtrace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/SuiteCRM-Newest-version/include/MVC/Controller/SugarController.php(553): sugar_die('There is no act...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/SuiteCRM-Newest-version/include/MVC/Controller/SugarController.php(1088): SugarController->no_action()
+#2 /Applications/XAMPP/xamppfiles/htdocs/SuiteCRM-Newest-version/include/MVC/Controller/SugarController.php(465): SugarController->handleActionMaps()
+#3 /Applications/XAMPP/xamppfiles/htdocs/SuiteCRM-Newest-version/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#4 /Applications/XAMPP/xamppfiles/htdocs/SuiteCRM-Newest-version/include/MVC/SugarApplication.php(109): SugarController->execute()
+#5 /Applications/XAMPP/xamppfiles/htdocs/SuiteCRM-Newest-version/index.php(52): SugarApplication->execute()
+#6 {main}
+Mon May 21 10:59:47 2018 [35419][1][FATAL] Exception handling in /Applications/XAMPP/xamppfiles/htdocs/SuiteCRM-Newest-version/include/MVC/Controller/SugarController.php:402
+Mon May 21 10:59:47 2018 [35419][1][FATAL] Exception in Controller: There is no action by that name: getData
+Mon May 21 10:59:47 2018 [35419][1][FATAL] backtrace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/SuiteCRM-Newest-version/include/MVC/Controller/SugarController.php(553): sugar_die('There is no act...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/SuiteCRM-Newest-version/include/MVC/Controller/SugarController.php(1088): SugarController->no_action()
+#2 /Applications/XAMPP/xamppfiles/htdocs/SuiteCRM-Newest-version/include/MVC/Controller/SugarController.php(465): SugarController->handleActionMaps()
+#3 /Applications/XAMPP/xamppfiles/htdocs/SuiteCRM-Newest-version/include/MVC/Controller/SugarController.php(373): SugarController->process()
+#4 /Applications/XAMPP/xamppfiles/htdocs/SuiteCRM-Newest-version/include/MVC/SugarApplication.php(109): SugarController->execute()
+#5 /Applications/XAMPP/xamppfiles/htdocs/SuiteCRM-Newest-version/index.php(52): SugarApplication->execute()
+#6 {main}
