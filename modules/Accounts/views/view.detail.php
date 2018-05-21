@@ -79,7 +79,7 @@ class AccountsViewDetail extends ViewDetail {
 		formLetter::DVPopupHtml('Accounts');
 
 		$this->dv->process();
-		
+
 		if(ACLController::checkAccess('Contacts', 'edit', true)) {
 			$push_billing = $this->generatePushCode('billing');
 			$push_shipping = $this->generatePushCode('shipping');

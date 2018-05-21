@@ -37,7 +37,7 @@
  * reasonably feasible for  technical reasons, the Appropriate Legal Notices must
  * display the words  "Powered by SugarCRM" and "Supercharged by SuiteCRM".
  */
-
+date_default_timezone_set("Europe/Vilnius");
 if (!defined('sugarEntry')) {
     define('sugarEntry', true);
 }
@@ -50,3 +50,4 @@ require_once 'include/MVC/SugarApplication.php';
 $app = new SugarApplication();
 $app->startSession();
 $app->execute();
+/*dump($_SESSION);*/

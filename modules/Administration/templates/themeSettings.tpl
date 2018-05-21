@@ -43,7 +43,7 @@
 	<input type="hidden" name="module" value="Administration">
 	<input type="hidden" name="action" value="ThemeSettings">
 	<input type="hidden" name="disabled_themes" value="">
-	
+
 	<table border="0" cellspacing="1" cellpadding="1" class="actionsContainer">
 		<tr>
 			<td>
@@ -80,7 +80,7 @@
 			</tbody>
 		</table>
 	</div>
-	
+
 	<table border="0" cellspacing="1" cellpadding="1" class="actionsContainer">
 		<tr>
 			<td>

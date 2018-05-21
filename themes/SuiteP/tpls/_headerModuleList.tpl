@@ -39,6 +39,17 @@
  */
 *}
 <!--Start Responsive Top Navigation Menu -->
+
+
+
+
+
+
+
+{php}
+
+{/php}
+
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -48,6 +59,14 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
+
+
+
+
+
+
+
+
             <ul class="dropdown-menu mobile_menu" role="menu" id="mobile_menu">
                 {foreach from=$groupTabs item=modules key=group name=groupList}
                     {if $smarty.foreach.groupList.last}
@@ -76,6 +95,7 @@
                     {/if}
                 {/foreach}
             </ul>
+            {*Kazkur cia create mygtukas----------------------------------------------*}
             <div id="mobileheader" class="mobileheader">
                 <div id="modulelinks" class="modulelinks">
                     {foreach from=$moduleTopMenu item=module key=name name=moduleList}
@@ -154,6 +174,18 @@
                 </div>
             </div>
         </div>
+
+
+
+
+
+
+
+        {*--------------------------------------------------------------------------------------*}
+
+
+
+
         <div class="desktop-toolbar" id="toolbar">
             {if $USE_GROUP_TABS}
                 <ul class="nav navbar-nav">
@@ -634,8 +666,37 @@
                 </li>
             </ul>
         </div>
+
+
+        {*Dropdown button bar-------------------------------*}
+
         <div class="desktop-bar">
             <ul id="toolbar" class="toolbar">
+            <li id="quickcreatetop" class="create dropdown nav navbar-nav quickcreatetop">
+
+                {if $current_user->isAdmin()}
+                    <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        <span class="suitepicon suitepicon-action-caret" style="font-size:13pt;">Roles</span>
+                    </a>
+                {/if}
+
+
+                <ul class="dropdown-menu" role="menu">
+                    {foreach from=$test_users item=t}
+                        <li><a href="index.php?module=Administration&action=spectate&user_id={$t.id}">{$t.user_name}</a></li>
+                    {/foreach}
+                </ul>
+                </li>
+
+
+
+
+
+
+
+
+
+
                 <li id="quickcreatetop" class="create dropdown nav navbar-nav quickcreatetop">
                     <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                         {$APP.LBL_CREATE_BUTTON_LABEL}<span class="suitepicon suitepicon-action-caret"></span>
@@ -718,6 +779,9 @@
             </ul>
 
         </div>
+
+
+        {*-----------------------------------------------------------*}
 </nav>
 <!--End Responsive Top Navigation Menu -->
 {if $THEME_CONFIG.display_sidebar}
@@ -725,13 +789,17 @@
     <div id='sidebar_container' class="container-fluid sidebar_container">
 
         <a id="buttontoggle" class="buttontoggle"><span></span></a>
-                
+
         <!--<div class="row">-->
             <!--<div {if $smarty.cookies.sidebartoggle == 'collapsed'}style="display:none"{/if}
                  class="col-sm-3 col-md-2 sidebar">-->
+
+
+
+        {*left side panel---------------------------------------------------------------------------------*}
              <div {if $smarty.cookies.sidebartoggle == 'collapsed'}style="display:none"{/if}
              class="sidebar">
-                
+
                 <div id="actionMenuSidebar" class="actionMenuSidebar">
                     {foreach from=$moduleTopMenu item=module key=name name=moduleList}
                         {if $name == $MODULE_TAB}
@@ -758,7 +826,7 @@
                         {/if}
                     {/foreach}
                 </div>
-                
+
                 <div id="recentlyViewedSidebar" class="recentlyViewedSidebar">
                     {if is_array($recentRecords) && count($recentRecords) > 0}
                     <h2 class="recent_h3">{$APP.LBL_LAST_VIEWED}</h2>

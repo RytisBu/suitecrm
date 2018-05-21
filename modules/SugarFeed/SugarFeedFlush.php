@@ -43,6 +43,7 @@ if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 
 
 class SugarFeedFlush {
+
     function flushStaleEntries($bean, $event, $arguments) {
         $admin = new Administration();
         $admin->retrieveSettings();
@@ -63,4 +64,64 @@ class SugarFeedFlush {
             $admin->retrieveSettings(FALSE,TRUE);
         }
     }
+
+    /* function testHook($bean, $event, $arguments) {
+         define("Default_role", "42aff94f-0951-c0f1-425c-5af56918066c");//No role
+         global $current_user;
+         echo "<pre>";
+         if($current_user->isAdmin()){
+         }else if(!$current_user->isAdmin()){
+             if(empty(ACLRole::getUserRoleNames($current_user->id))){
+                 $user=new User();
+                 $user->retrieve($current_user->id);
+                 $role = new ACLRole();
+                 $role->retrieve(Default_role);
+
+                 if (!$user->check_role_membership($role->name))  {
+                     $role->set_relationship(
+                         'acl_roles_users',
+                         array( 'role_id' => $role->id, 'user_id' => $current_user->id),
+                         false);
+                     $role->save();
+                 }
+             }
+         }
+     }*/
+
+
+
+    function tryHook($bean, $event, $arguments){
+        define("Try_hook", "12be0189-c672-0590-88db-5af9a40ba7bc");
+        global $current_user;
+        $current_user->isAdmin();
+        if($current_user->id == 1){
+            //Admin content.
+        }else if($current_user->id != 1){
+            if(empty(ACLRole::getUserRoleNames($current_user->id))){
+                $user = new User();
+                $user->retrieve($current_user-id);
+                $role = new ACLRole();
+                $role->retrieve(Try_hook);
+                //if(!$user->check_role_membership($role->name)){
+                $role->set_relationship('acl_roles_users',
+                    array('user_id' => $current_user->id, 'role_id' => $role->id), false
+                );
+                $role->save();
+                //}
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

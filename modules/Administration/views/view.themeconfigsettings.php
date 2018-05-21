@@ -41,22 +41,22 @@ if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 require_once('modules/Administration/Forms.php');
 require_once('modules/Configurator/Configurator.php');
 require_once('include/MVC/View/SugarView.php');
-        
+
 class AdministrationViewThemeConfigSettings extends SugarView
-{	
+{
  	/**
 	 * @see SugarView::_getModuleTitleParams()
 	 */
 	protected function _getModuleTitleParams($browserTitle = false)
 	{
 	    global $mod_strings;
-	    
+
     	return array(
     	   "<a href='index.php?module=Administration&action=index'>".$mod_strings['LBL_MODULE_NAME']."</a>",
     	   $mod_strings['LBL_THEME_SETTINGS']
     	   );
     }
-    
+
 	/**
      * @see SugarView::process()
      */
@@ -91,8 +91,8 @@ class AdministrationViewThemeConfigSettings extends SugarView
 
         parent::process();
     }
-    
- 	/** 
+
+ 	/**
      * display the form
      */
  	public function display()
@@ -102,7 +102,7 @@ class AdministrationViewThemeConfigSettings extends SugarView
         $this->ss->assign('config',SugarThemeRegistry::getThemeConfig($_REQUEST['theme']));
         $this->ss->assign('mod', $mod_strings);
         $this->ss->assign('APP', $app_strings);
-        
+
         echo $this->getModuleTitle(false);
         echo $this->ss->fetch('modules/Administration/templates/themeConfigSettings.tpl');
     }

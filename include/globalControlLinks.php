@@ -59,6 +59,9 @@ $global_control_links['employees'] = array(
 'linkinfo' => array($app_strings['LBL_EMPLOYEES']=> 'index.php?module=Employees&action=index&query=true'),
 'submenu' => ''
 );
+
+
+
 if (
         is_admin($current_user)
 
@@ -79,6 +82,7 @@ $global_control_links['help'] = array(
  );
 */
 
+
 $global_control_links['users'] = array(
 'linkinfo' => array($app_strings['LBL_LOGOUT'] => 'index.php?module=Users&action=Logout'),
 'submenu' => ''
@@ -87,6 +91,24 @@ $global_control_links['users'] = array(
 $global_control_links['about'] = array('linkinfo' => array($app_strings['LNK_ABOUT'] => 'index.php?module=Home&action=About'),
 'submenu' => ''
 );
+
+if (!empty($_SESSION['spectater_id'])){
+
+$global_control_links['spectate'] = array(
+    'linkinfo' => array('End Spectate' => 'index.php?module=Administration&action=end_spectate'),
+    'submenu' => ''
+);
+}
+
+if(!empty($_SESSION['spectater_id'])){
+    $global_control_links['testRole'] = array(
+        'linkinfo' => array('Check Role' => 'index.php?module=Administration&action=testRole'),
+        'submenu' => ''
+    );
+}
+
+//dump($global_control_links);
+//exit;
 
 if (is_file('custom/include/globalControlLinks.php')) {
     include('custom/include/globalControlLinks.php');

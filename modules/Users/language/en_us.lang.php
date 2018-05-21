@@ -211,6 +211,7 @@ $mod_strings = array(
     'LBL_CREATED_BY_NAME' => 'Created By', //bug 48978
     'LBL_MODIFIED_BY_ID' => 'Modified By ID',
     'LBL_MODULE_NAME' => 'Users',
+    'LBL_MODULE_ROLE_NAME' => 'Role',
     'LBL_MODULE_TITLE' => 'Users: Home',
     'LBL_NAME' => 'Full Name',
     'LBL_SIGNATURE_NAME' => 'Name',
@@ -679,4 +680,5 @@ $mod_strings = array(
     'ERR_USER_FACTOR_SMTP_REQUIRED' => 'SMTP server settings required first.',
     'ERR_USER_FACTOR_CHANGE_DISABLED' => 'Current user is not able to change two factor authentication settings.',
     'LNK_IMPORT_CAMPAIGNS' => 'Import Campaign',
+
 ); // END STRINGS DEFS

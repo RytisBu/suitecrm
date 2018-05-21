@@ -43,7 +43,7 @@
 	<input type="hidden" name="module" value="Administration">
 	<input type="hidden" name="action" value="ThemeConfigSettings">
     <input type="hidden" name="do" value="">
-	
+
 	<table border="0" cellspacing="1" cellpadding="1" class="actionsContainer">
 		<tr>
 			<td>
@@ -71,7 +71,7 @@
             {/foreach}
 		</table>
 	</div>
-	
+
 	<table border="0" cellspacing="1" cellpadding="1" class="actionsContainer">
 		<tr>
 			<td>
